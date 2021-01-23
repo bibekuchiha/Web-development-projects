@@ -1,0 +1,32 @@
+h1 {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
+    text-align: center;
+    font-style: italic;
+    font-size: 100px;
+    color: rgb(233, 226, 207);
+  }
+p.headers{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.item h2  {
+      color:crimson;
+      font-style: italic;
+      font-size: 70px;
+  }
+
+p {
+    font-style:italic;
+    font-size: 20px;
+}
+.price {
+    color: blue;
+    font-weight: bold;
+}
+h3 {
+    color:rgb(78, 74, 47);
+    font-weight: bolder;
+    font-size: 25px;
+
+}
