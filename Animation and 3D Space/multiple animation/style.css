@@ -1,0 +1,33 @@
+@keyframes rotate{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes shape{
+    from{
+        height: 200px;
+        width: 200px;
+    }
+    to{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+}
+@keyframes{_
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(226, 53, 0);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    animation-name: rotate ,shape;
+    animation-duration: 2s,2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate;
+}

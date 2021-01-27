@@ -1,0 +1,146 @@
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transition:  1s ease-in-out;
+}
+#div1:hover{
+    transform: scale(.5) translate(450px);
+}
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transition:  1s steps(5,end);
+}
+#div2:hover{
+    transform: scale(.5) translate(450px);
+}
+#div3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transition:2s ease-in-out;
+}
+#div3:hover{
+    border-radius: 50%;
+    transform: scale(.5) translate(450px) rotate(180deg);
+}
+
+/*animation */
+@keyframes changeShape{
+    0%{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+
+.animation1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    top: 67%;
+    left: 30%;
+    animation: changeShape 2s ease-in-out infinite alternate;
+
+}
+@keyframes bounce{
+    0%{
+        height: 100px;
+        width: 100px;
+        top: 57%;
+    }
+    25%{
+        height: 100px;
+        width: 100px;
+        top: 67%;
+    }
+    50%{
+        height: 100px;
+        width: 100px;
+        top: 60%;
+    }
+    100%{
+        height: 100px;
+        width: 100px;
+        top: 67%;
+    }
+}
+.animation2{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    animation: bounce 1s ease-in-out infinite alternate;
+
+
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(245deg);
+    }
+    25%{
+        transform: rotate(490deg);
+    }
+    50%{
+        transform: rotate(535deg);
+    }
+    75%{
+        transform: rotate(680deg);
+    }
+    100%{
+        transform: rotate(710deg);
+    }
+}
+.animation3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    top: 67%;
+    left: 70%;
+    animation: rotate 1s ease-in-out infinite alternate;
+
+}
+@keyframes fade {
+    0%{
+        color: white;
+        border: none;
+    }
+    100%{
+        color: black;
+        font-size: 20px;
+    }
+
+}
+.animation4{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    animation: fade 1s ease-in-out infinite alternate;
+
+}
