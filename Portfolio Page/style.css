@@ -375,7 +375,7 @@ section:nth-child(2n + 1) {
     left: -15%;
     height: 0.5rem;
     width: 0.5rem;
-    background-color: blue;
+    background-color: red;
     z-index: 1;
 }
 .timeline-box:nth-child(2n+1)::after{
@@ -386,8 +386,35 @@ section:nth-child(2n + 1) {
     border-radius: 50%;
     height: 0.5rem;
     width: 0.5rem;
-    background-color: blue;
+    background-color: red;
     z-index: 1;
+}
+
+@media screen and (max-width:600px){
+    .timeline-line{
+        left: 5%;
+
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        top: 5%;
+        left: -11% !important;
+        width: 80%;
+    }
+    /*top heading */
+    #my-name{
+        font-size: 2.5rem;
+      
+    }
+    #contact-form{
+        width: 50% !important;
+    }
+    #my-details-container{
+        width: 60% !important;
+    }
 }
 /* education */
 .education-title{
